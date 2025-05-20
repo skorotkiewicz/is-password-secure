@@ -16,8 +16,8 @@
         "noUnusedImports": "warn",
         "noUnusedVariables": "warn"
       },
-      "a11y": {
-        "useKeyWithClickEvents": "info"
+      "suspicious": {
+        "noExplicitAny": "off"
       }
     }
   },
