@@ -6,6 +6,8 @@ A simple NPM package for verifying password security using the Ollama API. This 
 
 ```bash
 npm install is-password-secure
+yarn add is-password-secure
+bun add is-password-secure
 ```
 
 ## Requirements
@@ -18,7 +20,8 @@ npm install is-password-secure
 Basic usage:
 
 ```typescript
-import isPasswordSecure from 'is-password-secure';
+import { isPasswordSecure } from 'is-password-secure';
+// const { isPasswordSecure } = require('is-password-secure');
 
 async function checkPassword() {
   try {
@@ -90,7 +93,7 @@ The package connects to the Ollama API and sends the provided password for evalu
 This package is written in TypeScript and provides full type definitions:
 
 ```typescript
-import isPasswordSecure, { PasswordSecurityResult, PasswordSecurityOptions } from 'is-password-secure';
+import { isPasswordSecure }, { PasswordSecurityResult, PasswordSecurityOptions } from 'is-password-secure';
 
 const options: PasswordSecurityOptions = {
   model: 'llama3',

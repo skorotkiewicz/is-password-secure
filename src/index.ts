@@ -49,7 +49,7 @@ interface OllamaResponse {
  * @param options - Configuration options
  * @returns Promise with security assessment results
  */
-async function isPasswordSecure(
+export async function isPasswordSecure(
   password: string,
   options: PasswordSecurityOptions = {},
 ): Promise<PasswordSecurityResult> {
